@@ -71,9 +71,6 @@ async uploadPhoto(){
         await this.kapacitetBaterije.click();
         await this.kapacitetBaterije.fill('250');
         await this.predjeniKilometri.fill('250000');
-    
-
-    //async setTehnickeKaraKteristikeAutomobilasectionSeconPart() {
         await this.page.locator(this.menuEkoloskaKategorija).click();
         await this.page.locator(this.euro2).click();
         await this.page.locator(this.menuRegistrovan).click();

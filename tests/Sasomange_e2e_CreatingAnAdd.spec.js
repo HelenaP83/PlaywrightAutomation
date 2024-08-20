@@ -8,7 +8,8 @@ import { O_OglasivacuPage } from '../pages/O_oglasivacuPage';
 
 
 
-test('Sasomange_e2e_CreatingAnAdd.spec.js', async ({ browser }) => {
+test('Sasomange_e2e_Creating an add filling mandatory fields.spec.js', async ({ browser }) => {
+  
   const context = await browser.newContext();
   const page = await context.newPage();
 
@@ -22,7 +23,7 @@ test('Sasomange_e2e_CreatingAnAdd.spec.js', async ({ browser }) => {
   await homePage.goToHomePage();
   await homePage.clickLnkUlogujSe();
   await expect(page).toHaveURL('https://sasomange.rs/uloguj-se');
-  await loginPage.login('helena83p@yahoo.com', 'Test1234');
+  await loginPage.login('hpapantidis@gmail.com', 'Test1234');
   await homePage.clickBtnDodajOglas();
   await expect(page).toHaveURL('https://sasomange.rs/moj-sasomange/dodaj-oglas');
 

@@ -1,0 +1,37 @@
+{
+  "ValidSetdata": [
+    {
+      "email": "hpapantidis@gmail.com",
+      "password": "Test1234"
+    }
+  ],
+  "InvalidMailData": [
+    {
+      "email": "helena@com",
+      "password": "Test1234"
+    },
+    {
+      "email": "helenayahoo.com",
+      "password": "Test1234"
+    },
+    {
+      "email": "helena@@@yahoo",
+      "password": "Test1234"
+    },
+    {
+      "email": "@yahoo.com",
+      "password": "Test1234"
+    }
+   
+  ],
+  "InvalidPasswordData": [
+    {
+      "email": "helena83p@yahoo.com",
+      "password": " "
+    },
+    {
+      "email": "helena@com",
+      "password": "test1234"
+    }
+    
+  ]}
